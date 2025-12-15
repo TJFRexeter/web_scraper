@@ -1,7 +1,7 @@
 import os
 import re
 
-path = str(os.getcwd()) + "\\web\\"
+path = str(os.getcwd()) + "\\web_scraper\\"
 
 filename = "bet365.html"
 
@@ -31,3 +31,4 @@ odds = scrape(odds_search,last_line)
 teams = scrape(team_search,last_line)
 dates = scrape(date_search,last_line)+scrape(date_search2,last_line)
 
+print(odds,teams,dates)
